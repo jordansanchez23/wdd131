@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"WDD 131 - Dynamic Web Fundamentals - Jordan Sanchez</title>
+    <meta name="description" content="This website is about WDD 131 - Dynamic Web Fundamentals, especially about my layouts and learning. My name is Jordan Sanchez and this website is about me.">
+    <meta name="author" content="Jordan Sanchez">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - Jordan Sanchez</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/jordan-sanchez-90b607210/">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com">I-learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/ot/josh/1?lang=eng">Scripture</a></li>
+                <li><a href="Final-Project">Final-Project-Link</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <div class="half-section">
+                <div class="about-content">
+                    <h2>About me</h2>
+                    <div class="about-text">
+                        <p>My name is Jordan, I was born in Mexico and live with my family in Tijuana. I am currently working as a cook at Jack in the Box. My wife is my world, and I love spending time with her. I love to play basketball, piano, and video games.</p>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="/images/profile.jpg" class="myself" alt="Jordan's profile picture">
+                </div>
+            </div>
+            
+            <div class="half-section">
+                <div class="tijuana-content">
+                    <h2>Tijuana, Mexico</h2>
+                    <div class="tijuana-text">
+                        <p>Tijuana is a vibrant city located just south of the U.S. border in Baja California, Mexico. Known for its rich cultural diversity, Tijuana boasts a dynamic arts scene, exceptional cuisine, and numerous shopping destinations. The city is a major hub for innovation and industry, playing a significant role in cross-border commerce and fostering a unique blend of Mexican and international influences. Tijuana's cultural landmarks, festivals, and welcoming atmosphere make it a popular destination for visitors and a lively urban center.</p>
+                    </div>
+                </div>
+                <div class="tijuana-image">
+                    <img src="/images/tijuana.jpg" class="tijuana" alt="Tijuana cityscape">
+                </div>
+            </div>
+        </section>
+        
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul class="web-dev-links">
+                <li><a href="https://www.samsung.com/">Samsung</a></li>
+                <li><a href="https://www.facebook.com/">Facebook</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/?lang=eng">LDS</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <P>© <span id="currentyear"></span> | Jordan Sanchez | Tijuana, Mexico</P>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
