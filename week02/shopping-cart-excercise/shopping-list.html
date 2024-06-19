@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list example</title>
+    <style>
+      li {
+        margin-bottom: 10px;
+      }
+
+      li button {
+        font-size: 12px;
+        margin-left: 20px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>My shopping list</h1>
+
+    <div>
+      <label for="item">Enter a new item:</label>
+      <input type="text" name="item" id="item">
+      <button>Add item</button>
+    </div>
+
+    <ul>
+
+    </ul>
+
+    <script>
+      function addItemToList() {
+    const newItemText = inputItem.value.trim(); // Obtener el valor del input y limpiar espacios
+  
+    if (newItemText === '') {
+      return; // Si el input está vacío, no hacemos nada
+    }
+  
+    const newItem = document.createElement('li'); // Crear un nuevo elemento <li>
+    const itemText = document.createTextNode(newItemText); // Crear un nodo de texto con el valor del input
+  
+    const deleteButton = document.createElement('button'); // Crear un botón para eliminar
+    deleteButton.textContent = 'Delete'; // Texto del botón
+  
+    deleteButton.addEventListener('click', function () {
+      itemList.removeChild(newItem); // Función para eliminar el item cuando se hace clic en el botón Delete
+    });
+  
+    newItem.appendChild(itemText); // Añadir el texto al <li>
+    newItem.appendChild(deleteButton); // Añadir el botón de Delete al <li>
+    itemList.appendChild(newItem); // Añadir el <li> completo a la lista <ul>
+  
+    inputItem.value = ''; // Limpiar el input después de añadir el item
+    inputItem.focus(); // Enfocar el input para la siguiente entrada
+  }
+  
+  // Agregar un evento de clic al botón de añadir item
+  addItemButton.addEventListener('click', addItemToList);
+    </script>
+  </body>
+</html>
