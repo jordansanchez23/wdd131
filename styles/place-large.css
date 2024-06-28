@@ -12,7 +12,6 @@
 
 :root {
     --red: red;
-    --green: green;
     --white: white;
     --black: black;
 }
@@ -21,7 +20,7 @@
     position: relative;
     padding-top: 50px;
     background-color: var(--red);
-    border-bottom: 20px solid --green;
+    border-bottom: 20px solid green;
 }
 
 .hero-container h1 {
@@ -71,6 +70,7 @@
     background-color: rgba(255, 255, 255, 0.8); 
     padding: 10px; 
 }
+
 .data {
     top: 30%;
 }
@@ -88,7 +88,7 @@
     margin-bottom: 10px;
     position: relative;
     display: inline-block;
-    background-color: var(--green);
+    background-color: green;
     color: var(--white);
     padding: 5px 10px;
 }
@@ -98,7 +98,7 @@
 }
 
 footer {
-    border-top: 20px solid var(--green);
+    border-top: 20px solid green;
     background-color: var(--red);
     color: var(--black);
     width: 100%;
