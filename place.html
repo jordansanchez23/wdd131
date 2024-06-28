@@ -15,19 +15,43 @@
 </head>
 <body>
     <header>
+        <div class="hero-container">
         <h1>Mexico</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="images\place1.webp"> 
-            <source media="(min-width: 601px)" srcset="images\place2.webp"> 
-            <img src="/images/place2.webp" alt="Zocalo of Mexico City"> 
-        </picture>
+        </div>
+        <div class="hero-image">
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/place1.webp"> 
+                <source media="(min-width: 601px)" srcset="images/place2.webp"> 
+                <img src="/images/place2.webp" alt="Zocalo of Mexico City"> 
+            </picture>
+        </div>
     </header>
     <main>
-        <section>
-
+        <section class="data">
+            <div class="data-content">
+            <h2><strong>Data</strong></h2>
+                <p><strong>Area: </strong>1,964,375 sq km</p>
+                <p><strong>Population: </strong>126,014,024</P>
+                <p><strong>Capital: </strong>Mexico City</p>
+                <p><strong>Language: </strong>Spanish</p>
+                <p><strong>Currency: </strong>Mexican Peso (MXN)</p>
+                <p><strong>Time Zone: </strong>UTC-6 (Central Time Zone)</p>
+                <p><strong>Calling Code: </strong>+52</p>
+                <p><strong>Internet TLD: </strong>.mx</p>
+            </div>
         </section>
-        <section>
-
+        <section class="weather">
+            <div class="weather-content">
+            <h2><strong>Wheater</strong></h2>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/sun.svg">
+                    <img src="/images/sun.svg" alt="Partly cloudy">
+                </picture>
+            <p><strong>Temperature: </strong>25°C</p>
+            <p><strong>Conditions: </strong>Sunny</p>
+            <p><strong>Wind: </strong>10 km/h</p>
+            <p><strong>Wind Chill: </strong>24.5°</p>
+            </div>
         </section>
 
     </main>

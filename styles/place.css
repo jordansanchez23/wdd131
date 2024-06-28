@@ -1,13 +1,26 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@media (min-width: 600px) {
+    .weather-content picture {
+        display: none; 
+    }
+    .weather-content h2 strong::after {
+        content: " ⛅"; 
+    }
+
+    .hero-image {
+        height: auto;
+    }
+
+    .hero-container h1 {
+        position: absolute;
+        transform: none;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .data, .weather {
+        position: absolute;
+        margin: 20px 0;
+        bottom: none; 
+        right: none;
+    }
 }
-
-
-.roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
