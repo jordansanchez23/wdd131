@@ -28,8 +28,19 @@
         flex: 1 1 100%;
     }
 
-    
-
+    .temples-images img {
+        max-width: 100%; 
+        height: auto; 
+    }
+    .temples-images figure {
+        width: calc(33.33% - 20px); 
+        margin: 0;
+    }
+    .temple-card img {
+        max-width: 100%;
+        height: auto;
+        max-height: 250px; 
+    }
 
 
 
