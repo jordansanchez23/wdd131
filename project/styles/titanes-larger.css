@@ -1,48 +1,31 @@
-.open-sans {
-    font-family: "Open Sans", sans-serif;
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  
-  .roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400; 
-    font-style: normal;
-  }
-
-body {
-    font-family: var(--paragraph-font);
-    max-width: 960px;
-    padding: 20px;
-    margin: 0 auto;
-}
-
 :root {
     --primary-color: #94ff4c;
     --secondary-color: #114B5F;
     --black: black;
     --white: white;
     --alternative: #88D498;
+    --alternative2: #F3E9D2;
 
     --heading-font: 'Open Sans', sans-serif;
     --paragraph-font: 'Roboto', sans-serif;
+}
 
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: var(--alternative2);
 }
 
 h1, h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
-article, .tongue h2 {
-    color: orange;
+    color: var(--secondary-color);
 }
 
 header {
     padding: 20px;
-    background-color: white;
-    border-bottom: var(--secondary-color);
+    background-color: var(--secondary-color);
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
@@ -51,8 +34,6 @@ header {
 
 header img {
     max-height: 95px; 
-    height: auto;
-    width: auto;
     margin-right: 20px; 
 }
 
@@ -63,25 +44,18 @@ nav {
     justify-content: space-around;
     padding: 10px 20px;
     border-radius: 12px;
-    
 }
 
 nav a {
     display: flex;
     justify-content: center;
     gap: 10px;
-    color: var(--primary-color);
+    color: var(--white);
     text-decoration: none;
     padding: 1rem;
-    
-}
-
-nav a:link, nav a:visited {
-    color: var(--alternative);
 }
 
 nav a:hover {
-    color: white;
     background-color: var(--alternative);
 }
 
@@ -91,43 +65,36 @@ nav.sociallinks a {
 
 .hero {
     position: relative;
-    
-    
+    background-color: var(--alternative2);
 }
 
-.hero article {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 70%; 
-    background-color: rgba(15, 26, 131, 0.7); 
-    padding: 20px; 
-    border-radius: 20px; 
-    font-size: 1.2em; 
-    margin-top: 20px; 
-}
-
-.hero h1 {
-    font-size: 1.2em; 
-    color: white; 
-}
-
-.hero img {
-    display: block;
+.hero-video {
     width: 100%;
     height: auto;
+    display: block;
+    object-fit: cover; 
 }
-.hero article img {
-    width: 30%; 
-    float: right; 
-    margin-left: 0px; 
+
+.hero-content {
+    position: absolute;
+    top: 10%; 
+    left: 50%;
+    transform: translate(-50%, 0); 
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 10px; 
+    border-radius: 20px; 
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5em; 
+    color: var(--white); 
+    margin: 0;
 }
 
 
 .title-titanes {
-    display: block;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -137,8 +104,6 @@ nav.sociallinks a {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
     justify-items: center;
-    
-
 }
 
 .images-of-titanes img {
@@ -147,11 +112,10 @@ nav.sociallinks a {
 }
 
 .images-of-titanes figure {
-    border: thin #c0c0c0 solid;
+    border: thin solid #c0c0c0;
     display: flex;
     flex-flow: column;
     padding: 5px;
-    max-width: 100%;
     margin: auto;
 }
 
@@ -159,44 +123,40 @@ nav.sociallinks a {
     margin-top: 10px;
 }
 
-
 section {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px 0;
+    background-color: var(--alternative2);
 }
 
 footer {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: var(--alternative);
+    background-color: var(--secondary-color);
     border-radius: 12px;
-
+    color: var(--white);
 }
 
 footer img {
     width: 40px;
-    height: auto;
     margin: 5px;
-    
 } 
 
 /*HTML FORM */
 
 form {
     width: 650px;
-    margin: 0 auto;
+    margin: 0 auto 40px;
     padding: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
-    background-color: white;
+    background-color: var(--alternative2);
     display: grid;
-    margin-bottom: 40px;
 }
 
 fieldset {
     display: grid;
-    grid-gap: .5rem;
+    gap: .5rem;
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1rem;
@@ -209,7 +169,7 @@ legend {
 }
 
 label, input, button, select, textarea {
-    font-family: Roboto, Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 label {
@@ -231,14 +191,14 @@ input[type="checkbox"] {
 button {
     margin: 1rem;
     background-color: navy;
-    color: #fff;
+    color: var(--white);
     border-radius: .5rem;
     padding: .75rem;
     font-size: 1.2rem;
 }
 
 button:hover {
-    background-color: #94ff4c;
+    background-color: var(--primary-color);
 }
 
 .form-item {
@@ -258,10 +218,7 @@ button:hover {
     margin: 0.5rem 0; 
 }
 
-.form-item.column2 label{
+.form-item.column2 label {
     display: flex;
     align-items: center;
 }
-
-
-
