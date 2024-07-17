@@ -1,0 +1,51 @@
+.open-sans {
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400; 
+    font-style: normal;
+  }
+
+body {
+    font-family: "Open Sans", sans-serif; 
+    background-color: #114B5F; 
+    color: black; 
+}
+
+h1, h2, h3 {
+    font-family: "Roboto", sans-serif; 
+    color: #94ff4c; 
+}
+
+
+section, header {
+    padding: 20px;
+    margin-bottom: 20px;
+    color: white; 
+}
+
+
+.schema {
+    background-color: #114B5F; 
+    color: white; 
+}
+
+.wireframe img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    border-top: 1px solid white;
+    background-color: #114B5F; 
+    color: white; 
+    text-align: center; 
+    padding: 10px 0; 
+}
