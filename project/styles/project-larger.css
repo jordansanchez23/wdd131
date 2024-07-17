@@ -1,0 +1,267 @@
+.open-sans {
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400; 
+    font-style: normal;
+  }
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+:root {
+    --primary-color: #94ff4c;
+    --secondary-color: #114B5F;
+    --black: black;
+    --white: white;
+    --alternative: #88D498;
+
+    --heading-font: 'Open Sans', sans-serif;
+    --paragraph-font: 'Roboto', sans-serif;
+
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+article, .tongue h2 {
+    color: orange;
+}
+
+header {
+    padding: 20px;
+    background-color: white;
+    border-bottom: var(--secondary-color);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    border-radius: 12px;
+}
+
+header img {
+    max-height: 95px; 
+    height: auto;
+    width: auto;
+    margin-right: 20px; 
+}
+
+nav {
+    background-color: var(--secondary-color);
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 20px;
+    border-radius: 12px;
+    
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 1rem;
+    
+}
+
+nav a:link, nav a:visited {
+    color: var(--alternative);
+}
+
+nav a:hover {
+    color: white;
+    background-color: var(--alternative);
+}
+
+nav.sociallinks a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    
+    
+}
+
+.hero article {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 70%; 
+    background-color: rgba(15, 26, 131, 0.7); 
+    padding: 20px; 
+    border-radius: 20px; 
+    font-size: 1.2em; 
+    margin-top: 20px; 
+}
+
+.hero h1 {
+    font-size: 1.2em; 
+    color: white; 
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.hero article img {
+    width: 30%; 
+    float: right; 
+    margin-left: 0px; 
+}
+
+
+.title-titanes {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.images-of-titanes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    
+
+}
+
+.images-of-titanes img {
+    width: 100%;
+    height: auto;
+}
+
+.images-of-titanes figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.images-of-titanes figcaption {
+    margin-top: 10px;
+}
+
+
+section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--alternative);
+    border-radius: 12px;
+
+}
+
+footer img {
+    width: 40px;
+    height: auto;
+    margin: 5px;
+    
+} 
+
+/*HTML FORM */
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: white;
+    display: grid;
+    margin-bottom: 40px;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+legend {
+    padding: 0.5rem;
+    color: navy;
+    font-size: 1.3em;
+}
+
+label, input, button, select, textarea {
+    font-family: Roboto, Arial, sans-serif;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 1rem;
+    background-color: navy;
+    color: #fff;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: #94ff4c;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;   
+    align-items: center;
+    margin: 0.5rem 0; 
+}
+
+.form-item.column2 label{
+    display: flex;
+    align-items: center;
+}
+
+
+
