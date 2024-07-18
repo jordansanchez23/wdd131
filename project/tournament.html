@@ -6,8 +6,8 @@
     <title>Home | Titanes Basketball Team</title>
     <meta name="description" content="Explore Titanes, a basketball team's official website featuring three pages: Home, Summer School, and Summer Tournament Registration. Created by Jordan, a lifelong basketball enthusiast and player, inspired by his personal history with the sport from school to mission, and beyond.">
     <meta name="author" content="Jordan Sanchez"> 
-    <link rel="stylesheet" href="styles/titanes.css">
-    <link rel="stylesheet" href="styles/titanes-larger.css">
+    <link rel="stylesheet" href="styles/tournament.css">
+    <link rel="stylesheet" href="styles/tournament-larger.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,76 +25,41 @@
     <main>
         <div class="hero">
             <div class="hero-content">
-            <h1>Welcome to Titanes!</h1>
+            <h1>Welcome</h1>
             </div>
-            <video loading="lazy" autoplay muted loop class="hero-video" width="800" height="450">
-                <source src="videos/titanes.mp4" type="video/mp4">
-                Your browser does not support video playback
-            </video>
+            <img loading="lazy" src="images/big titanes.jpg" class="hero-image" width="800" height="450">
         </div>
         <section>
             <div class="title-titanes">
-                <h2>Be part of the Titanes Family!</h2>
+                <h2>Register your team and participate to get rewards!</h2>
             </div>
             <div class="images-of-titanes">
                 <figure>
-                    <img loading="lazy" src="images/summer-camp1.jpg" alt="A person in the summer camp" width="400" height="600">
-                    <figcaption>Come to our Summer camp and improve your skills playing
-                        basketball
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img loading="lazy" src="images/summer-camp2.jpg" alt="People in the summer camp" width="400" height="600">
-                    <figcaption>You will have a lot of friends while you practice</figcaption>
-                </figure>
-                <figure>
-                    <img loading="lazy" src="images/tournament.jpg" alt="The tournament of Titanes" width="400" height="600">
-                    <figcaption>Meet our summer tournament, come with your team and friends and show
-                        who are the real titanes!
-                    </figcaption>
-                </figure>
-            </div> 
-        </section>
-        <section>
-            <div class="title-titanes">
-                <h2>Our Team</h2>
-            </div>
-            <div class="images-of-titanes">
-                <figure>
-                    <img loading="lazy" src="images/kyrie-irving.jpg" alt="Kyrie Irving" width="400" height="600">
-                    <figcaption>Kyrie Irving</figcaption>
-                </figure>
-                <figure>
-                    <img loading="lazy" src="images/jayson-tatum.jpg" alt="Jayson Tatum" width="400" height="600">
-                    <figcaption>Jayson Tatum</figcaption>
-                </figure>
-                <figure>
-                    <img loading="lazy" src="images/ray-allen.jpg" alt="Ray Allen" width="400" height="600">
-                    <figcaption>Ray Allen</figcaption>
-                </figure>
-                <figure>
-                    <img loading="lazy" src="images/larry-bird.jpeg" alt="Larry Bird" width="400" height="600">
-                    <figcaption>Larry Bird</figcaption>
-                </figure>
-                <figure>
-                    <img loading="lazy" src="images/jaylen-brown.jpg" alt="Jaylen Brown" width="400" height="600">
-                    <figcaption>Jaylen Brown</figcaption>
+                    <img loading="lazy" src="images/invitation.jpg" class="hero-image" alt="A person in the summer camp" width="400" height="600">
                 </figure>
             </div> 
         </section>
         <form id="subscription-form">
             <fieldset>
-                <legend>Titanes Insider</legend>
+                <legend>Register your team</legend>
                 <div class="form-item column2">
-                    <label for="fullname">Full Name:</label>
-                    <input type="text" id="fullname" name="fullname">
+                    <label for="team">Name of the team:</label>
+                    <input type="text" id="team" name="team" required maxlength="50">
+                </div>
+                <div class="form-item column2">
+                    <label for="coach">Coach:</label>
+                    <input type="text" id="coach" name="coach" required maxlength="50">
+                </div>
+                <div class="form-item column2">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
                 </div>
                 <div class="form-item column2">
                     <label for="useremail">Email:</label>
-                    <input type="email" id="useremail" name="useremail">
+                    <input type="email" id="useremail" name="useremail" required>
                 </div>
             </fieldset>
-            <button type="submit">Subscribe me</button>
+            <button type="submit">Register Team</button>
         </form>
     </main>
     <footer>
@@ -112,6 +77,6 @@
             </a>
         </nav>
     </footer>
-    <script src="scripts/titanes.js" defer></script>
+    <script src="scripts/tournament.js" defer></script>
 </body>
 </html>
