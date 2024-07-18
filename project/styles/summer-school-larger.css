@@ -1,0 +1,18 @@
+@media (min-width: 701px) {
+    .navigation {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 20px;
+        background-color: var(--secondary-color);
+        border-radius: 12px;
+    }
+
+    .navigation a {
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+    }
+
+    #menu {
+        display: none;
+    }
+}
